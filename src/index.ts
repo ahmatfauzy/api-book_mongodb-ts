@@ -18,6 +18,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send({
     message: "api is working",
+    url_author: "/api/author",
+    url_books: "/api/books",
+    url_genre: "/api/genre"
   });
 });
 

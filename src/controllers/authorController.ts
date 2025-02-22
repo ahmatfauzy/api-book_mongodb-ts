@@ -18,8 +18,8 @@ export const getAuthors = async (req: Request, res: Response) => {
       },
     });
     res.status(200).send({
-      data: allAutor,
       message: "success",
+      data: allAutor,
     });
   } catch (error) {
     console.log(error);
